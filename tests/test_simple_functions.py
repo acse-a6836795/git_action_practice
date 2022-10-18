@@ -20,8 +20,9 @@ class TestSimpleFunctions(object):
         answer = factorial(number)
         assert answer == expected
 
-    @pytest.mark.parametrize("number, expected", [(45, np.pi / 4),
-                                                  (np.pi / 2, 1)])
+    @pytest.mark.parametrize(
+        "number, expected", [(np.pi / 6, 0.49999999999999994), (np.pi / 2, 1)]
+    )
     def test_sin(self, number, expected):
         """Test our factorial function"""
         answer = sin(number)

@@ -18,3 +18,6 @@ def factorial(n):
 
 def sin(x):
     return np.sin(x)
+
+
+print(np.allclose(np.sin(np.pi / 6), 0.5))
